@@ -2,7 +2,7 @@
 
 Test Approach:
 Unit testing will be done by developers. Integration and end to end system test, regression and performance testing will be done by QA.
-Backend API testing will be done prior to the UI testing.
+Backend API testing will be done prior to the UI testing. All the endpoints will be identified and documented. 
 API endpoints that could potentially be bottleneck will be identified and will be the candidates for Load/Stress testing.
 Start of every sprint, the user stories in the scope of sprint will be understood and feature scenarios will be written covering all the Acceptance criteria. The scenarios will be automated using the automation framework created using cypress and cucumberJS.
 QA task card will be created for every user story and will be marked as done once all the scenarios are manually tested as part of functional testing.
@@ -25,3 +25,7 @@ DEV will be used by developers to deploy and unit test
 UAT will be used by QAs, Automation Engineer or PO
 
 Devs will create feature branch from Develop branch which will then be merged to Develop after Pull Request is created, reviewed, approved and unit tests are passing. Once ready, the Release branch will be made from Develop and deployed to UAT. After all the manual functional, non functional and automated regression tests are passing. The code will then be merged to master whereby it will be deployed to PROD.
+
+
+Continuous Integration:
+The execution of the backend and UI automation scripts will be done through CI tool like Jenkins.
