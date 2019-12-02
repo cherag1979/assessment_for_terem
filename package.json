@@ -1,0 +1,24 @@
+{
+  "name": "assessment_for_terem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open-cypress": "cypress open",
+    "features": "cypress run --config 'testFiles=*.feature' --browser chrome --env baseURL=http://automationpractice.com",
+    "test": "npm run features"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "3.7.0",
+    "cypress-cucumber-preprocessor": "1.17.0",
+    "cypress-xpath": "1.3.0"
+  },
+  "dependencies": {
+    "cosmiconfig": "5.0.7"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
